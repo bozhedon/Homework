@@ -11,8 +11,9 @@ def get_largest_perimiter(L):
                     p = a + b + c
     if p == 0:
         print('Невозможно составить треугольник')
+        return Null
     else:
-        print(p)
+        return p
 
 
 if __name__ == '__main__':
