@@ -2,9 +2,7 @@ def is_prime(n):
     k = 0
     for i in range(2, n):
         if n % i == 0:
-            print('False')
-            return 0
-        print(i)
+            return False
     if n > 0:
         return True
     else:
