@@ -7,7 +7,7 @@ def get_digit_sum(n):
     for i in range(len(n)):
         summa = summa + m % 10
         m = m // 10
-    print(summa)
+    return summa
 
 
 if __name__ == '__main__':

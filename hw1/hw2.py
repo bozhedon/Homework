@@ -1,19 +1,17 @@
 def get_is_beauty(n):
     summa = 0
-    m = int(n)
-    m2 = int(n)
-    if m < 0:
-        m = -m
-        m2 = -m2
-    while m > 0:
-        summa = summa + m % 10
-        m = m // 10
-    if m2 % summa == 0:
-        print("True")
+    chislo = n
+    if n < 0:
+        n = -n
+    while n > 0:
+        summa = summa + n % 10
+        n = n // 10
+    if chislo % summa == 0:
+        return True
     else:
-        print("False")
+        return False
 
 
 if __name__ == '__main__':
-    number = input('Введите число: ')
+    number = int(input('Введите число: '))
     get_is_beauty(number)

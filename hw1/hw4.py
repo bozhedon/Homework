@@ -6,9 +6,9 @@ def is_prime(n):
             return 0
         print(i)
     if n > 0:
-        print('True')
+        return True
     else:
-        print('False')
+        return False
 
 
 if __name__ == '__main__':

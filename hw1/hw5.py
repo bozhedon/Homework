@@ -7,10 +7,9 @@ def is_self_dividing(n):
     while m > 0:
         if m % 10 != 0:
             if m2 % (m % 10) != 0:
-                print('False')
-                return 0
+                return False
         m = m // 10
-    print('True')
+    return False
 
 
 if __name__ == '__main__':

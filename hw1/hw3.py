@@ -6,11 +6,9 @@ def get_is_power_of_two(n):
         if n % 2 == 0:
             n = n / 2
             if n == 1:
-                print('True')
-                return 0
+                return True
         else:
-            print('False')
-            return 0
+            return False
 
 
 if __name__ == '__main__':
