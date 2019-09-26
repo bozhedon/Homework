@@ -1,7 +1,6 @@
 def get_is_power_of_two(n):
     if n < 0:
-        print('False')
-        return 0
+        return False
     while n > 0:
         if n % 2 == 0:
             n = n / 2
