@@ -1,17 +1,17 @@
 def is_self_dividing(n):
-    m = int(n)
-    m2 = int(n)
-    if m < 0:
-        m = -m
-        m2 = -m2
-    while m > 0:
-        if m % 10 != 0:
-            if m2 % (m % 10) != 0:
+    chislo = n
+    if n < 0:
+        n = -n
+    while n > 0:
+        if n % 10 != 0:
+            if chislo % (n % 10) != 0:
                 return False
-        m = m // 10
-    return False
+        else:
+            return False
+        n = n // 10
+    return True
 
 
 if __name__ == '__main__':
-    number = input('Введите число: ')
+    number = int(input('Введите число: '))
     is_self_dividing(number)
