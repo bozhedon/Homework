@@ -5,5 +5,6 @@ def fizzbuzz(n):
         sum = sum + m
     return sum
 
+
 print(fizzbuzz(41))  # => 408
 print(fizzbuzz(1001))
