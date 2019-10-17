@@ -1,9 +1,8 @@
 def is_prime(n):
-    k = 0
-    for i in range(2, n):
+    for i in range(2, int(n ** (1 / 2))+1):
         if n % i == 0:
             return False
-    if n > 0:
+    if n > 1:
         return True
     else:
         return False
