@@ -1,4 +1,4 @@
-from lab1.special_words import load_english
+from lab2_data_structures.special_words import load_english
 
 english = load_english()
 
