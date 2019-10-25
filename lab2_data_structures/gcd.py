@@ -1,7 +1,7 @@
 def gcd(a, b):
-    if a > b:
-        a, b = b, a
-    for i in reversed(range(a + 1)):
+    # if a > b:
+    #     a, b = b, a
+    for i in reversed(range(max(a, b) + 1)):
         if i == 0:
             print(b)
             return b
@@ -16,3 +16,4 @@ gcd(3, 9)  # => 3
 gcd(1, 1)  # => 1
 gcd(100, 0)
 gcd(100, 25)
+gcd(100, 17)

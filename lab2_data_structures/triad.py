@@ -1,4 +1,10 @@
-from lab2_data_structures.special_words import load_english
+DICTIONARY_FILE = '/usr/share/dict/words'
+
+
+def load_english():
+    with open(DICTIONARY_FILE) as f:
+        return [word[:-1] for word in f if len(word) > 2]
+
 
 english = load_english()
 
