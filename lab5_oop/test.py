@@ -13,7 +13,7 @@ from html.parser import HTMLParser
 #     requests.get(url)
 
 
-BOT_API_TOKEN = '1033051975:AAHq6OBtzYy2vTYBKmvgN-mLz-NYI_Il4ZY'
+BOT_API_TOKEN = '{bot_api_token}'
 # CHAT_ID = '@nefu_puthon'
 # url = SEND_URL.format(
 #     BOT_API_TOKEN,
